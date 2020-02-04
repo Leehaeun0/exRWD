@@ -1,0 +1,15 @@
+/* 공통 스타일 */
+/* 박스모델 초기화 */
+
+/* 전체선택할때 성능 고려해야 */
+body, body *, body *::before, body *::after{
+   box-sizing: border-box; 
+}
+
+/* .container, .appMain 공통으로 플랙스 지정해도 괜찮다. 나중에 디버깅은 어려움 */
+.container, .appMain{
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+}

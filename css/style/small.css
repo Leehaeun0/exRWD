@@ -1,0 +1,46 @@
+body{
+    background-color: pink;
+    font-size: 1.4rem;
+}
+/* .container>*{
+    padding: 0 20px;
+} */
+
+.container{
+    padding: 0 20px;
+}
+
+.appHeader{
+    width: 100%;
+    /* min-height: 15vh; */
+}
+.appNavigation{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70vw;
+    height: 100vh;
+    transform: translate(-100%);
+}
+.appMain{
+    width: 100%;
+}
+.book{
+    width: 100%;
+}
+.news{
+    width: 100%;
+}
+.board{
+    width: 100%;
+}
+.favorite{
+    width: 100%;
+}
+.twitter{
+    width: 100%;
+}
+.appFooter{
+    width: 100%;
+    /* min-height: 15vh; */
+}
