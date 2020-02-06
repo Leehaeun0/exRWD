@@ -13,7 +13,7 @@ body{
 /* 헤더 */
 .appHeader{
     width: 1000px;
-    height: 80px;
+    height: 105px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -21,8 +21,11 @@ body{
     background-color: #fff;
 }
 .brand{
+    height: 105px;
     background-color: blue;
     margin: 0;
+    display: flex;
+    align-items: center;
 }
 .memberOnly{
     margin-top: 10px;
@@ -70,7 +73,65 @@ body{
 /* 네비 */
 .appNavigation{
     width: 100%;
+    background: #988574;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
 }
+.buttonBurger{
+    display: none;
+}
+.menu__list{
+    width: 1000px;
+    /* margin: 0 auto; */
+    background-color: skyblue;
+    display: flex;
+    justify-content: space-around;
+    /* justify-content: center; */
+    color: #fff;
+}
+.menu__item{
+    background-color: pink;
+    /* margin: 0 10em; */
+}
+.menu__link{
+    font-size: 1.8rem;
+    background-color: hotpink;
+    padding-left: 1em;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 
+    -1px 1px 0 #000, 1px -1px 0 #000;
+    outline: none;
+    cursor: default;
+}
+.menu__subMenu{
+    font-size: 1.5rem;
+    background-color: forestgreen;
+    padding-left: 20px;
+    /* margin-top: 1rem; */
+}
+.menu__subMenu li{
+    background-color: tomato;
+    margin-top: 1em;
+}
+.menu__subMenu a{
+    background-color: blue;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    /* margin: 1em; */
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* 메인 */
 .appMain{
@@ -101,3 +162,12 @@ body{
 .appFooter{
     width: 100%;
 }
+
+
+
+
+/* 
+body, .brand, .memberOnly, .searchForm, .menu__list, 
+.menu__item, .menu__link, .menu__subMenu, .menu__subMenu li{
+    background-color: transparent;
+} */

@@ -13,11 +13,14 @@
     <!-- <link rel="stylesheet" href="./css/style_test.css">
     <link rel="stylesheet" href="./css/style/small_test.css" media="screen and (max-width: 999px)">
     <link rel="stylesheet" href="./css/style/large_test.css" media="screen and (min-width: 1000px)"> -->
+    <script src="./js/main.js" defer></script>
 </head>
 
 
 <body>
     <div class="container">
+
+        <!-- 헤더 -->
         <header class="appHeader">
             <h1 class="brand">
                 <a href="#">
@@ -37,9 +40,12 @@
                     <button type="submit" class="button buttonSearch">검색</button>
                 </fieldset>
             </form>
+            
         </header>
 
-        <nav class="appNavigation menu">
+
+        <!-- 네비 -->
+        <nav class="appNavigation menu menu--isAct">
             <h2 class="a11yHidden">메인메뉴</h2>
             <button type="button" class="buttonNone buttonBurger" aria-label="메뉴열기">
                 <span class="buggerBar round positionTop"></span>
@@ -47,7 +53,7 @@
                 <span class="buggerBar round positionBottom"></span>
             </button>
             <ul class="menu__list resetList">
-                <li class="menu__item">
+                <li class="menu__item menu__item--menuAct">
                     <a href="#" class="menu__link">HTML에 대해</a>
                     <ul class="menu__subMenu">
                         <li><a href="#">HTML5 소개</a></li>
@@ -56,7 +62,7 @@
                     </ul>
                 </li>
                 <li class="menu__item">
-                    <a href="#" class="menu__link">CSS에 대행</a>
+                    <a href="#" class="menu__link">CSS에 대해</a>
                     <ul class="menu__subMenu">
                         <li><a href="#">CSS 소개</a></li>
                         <li><a href="#">CSS2 VS CSS3</a></li>
@@ -90,6 +96,8 @@
             </ul>
         </nav>
 
+
+        <!-- 메인 -->
         <main class="appMain">
             <section class="book">
                 <h2>

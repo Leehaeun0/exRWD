@@ -1,12 +1,20 @@
 body{
   background-color: skyblue;
-  font-size: 1em;
+  font-size: 1.6em;
 }
+
+/* 헤더 */
 .appHeader, .appMain{
   margin: 0 auto;
   position: relative;
 }
 .appHeader{
+  width: 1000px;
+  position: relative;
+  margin-bottom: 1em;
+}
+.appHeader{
+    background-color: #fff;
     width: 1000px;
 }
 .brand{
@@ -15,24 +23,9 @@ body{
     top: 50%;
     margin-top: -30px;
 }
-
+/* 검색폼 */
 .searchForm{
-    background-color: skyblue;
     text-align: right;
-}
-
-
-
-
-
-
-
-
-
-
-/* .appHeader{
-  width: 1000px;
-  position: relative;
 }
 .brand{
   position: absolute;
@@ -54,8 +47,86 @@ input[name="search"]{
   color: #fff;
   height: 35px;
   vertical-align: middle;
-} */
+}
 
+
+/* 메뉴 */
+nav{
+    background: #988574;
+    /* position: relative;
+    z-index: 1000; */
+}
+.buttonNone{
+    display: none;
+}
+.menu__list{
+    background-color: skyblue;
+    /* display: flex;
+    justify-content: center; */
+
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #fff;
+    padding: 2em 0;
+    
+    /* position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -453px; */
+
+}
+.menu__list::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.menu__item{
+    float: left;
+    /* width: 20%; */
+    /* display: inline-block; */
+    /* padding: 20px; */
+    /* margin: 24.5px; */
+    margin: 0 15.4px;
+    background-color: greenyellow;
+}
+.menu__link{
+  background-color: blue;
+  padding-left: 10px;
+  font-size: 1.15em; /* 16 * 1.15 + 18.4px */
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
+  outline: none;
+}
+.menu__link::before{
+    content: "";
+    background-image: url(./../images/);
+}
+.menu__subMenu{
+    background-color: pink;
+    /* padding: 10px 0 0 0; */
+    margin-top: 1.5em;
+    font-size: 1.05em;
+    padding-left: 30px;
+    cursor: auto;
+}
+.menu__subMenu li{
+    background-color: tomato;
+    /* margin: 15px 15px 0 15px; */
+    margin-top: 1em;
+}
+.menu__subMenu a{
+  background-color: green;
+  margin: 15px;
+  /* padding: 15px; */
+}
+
+
+
+
+
+
+
+
+/* 메인 */
 .appMain{
   width: 1020px;
 }

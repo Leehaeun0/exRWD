@@ -29,7 +29,7 @@ body{
 }
 .memberOnly{
     padding-right: 20px;
-    background-color: rgb(139, 128, 91);
+    background-color: #988574;
     position: absolute;
     top: 0;
     height: 35px;
@@ -52,29 +52,19 @@ body{
     padding: 0.5em 0.715em;
     font-weight: 100;
 }
-.appNavigation{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 70vw;
-    height: 100vh;
-    transform: translate(-100%);
-}
+
 
 .searchForm{
     margin: 0 0 0 20px;
 }
-.resetBox{
-    /* display: flex;
-    flex-wrap: wrap; */
-}
 .searchForm input{
-    width: calc(100% - 45px);
+    width: calc(100% - 55px);
     border: none;
     height: 35px;
     border-radius: 3px;
     padding-left: 10px;
     vertical-align: middle;
+    margin-right: 10px;
 }
 .buttonSearch{
     vertical-align: middle;
@@ -101,7 +91,139 @@ body{
 
 
 
+  /* 네비 메뉴 */
 
+.menu--isAct .menu__list{
+    transform: none;
+}
+.menu__list{
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background: hsla(0, 0%, 0%, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70vw;
+    height: 100vh;
+    transform: translate(-100%);
+    /* transform: none; */
+    /* transform: translate(0); 모든 트렌스폼 
+    속성을 초기화 하려면 none을 주는게 효율적*/
+}
+.menu__list{
+    color: #fff;
+    padding: 4rem;
+    transition: transform 0.2s ease-in-out;
+}
+.menu__item{
+    margin: 3rem 0;
+    background-color: blue;
+}
+.menu__link{
+    font-size: 1.7rem;
+    font-weight: 700;
+    background-color: hotpink;
+    display: inline-block;
+    padding: .5rem 1rem;
+}
+.menu__subMenu{
+    display: none;
+    font-size: 1.5rem;
+}
+.menu__subMenu li{
+    background-color: orange;
+    margin-top: 20px;
+}
+.menu__subMenu a{
+    display: inline-block;
+    padding: .5rem;
+    background-color: green;
+}
+.menu__item--menuAct .menu__subMenu{
+    display: block;
+}
+
+
+/* .menu__item, .menu__link, .menu__subMenu li, .menu__subMenu a{
+    background-color: transparent;
+} */
+
+
+/* 메인메뉴 제어 버튼 */
+
+.buttonBurger{
+    /* background-color: tomato; */
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 35px;
+    height: 35px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.buggerBar{
+    transition: all 0.2s;
+}
+.buttonNone{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+}
+.positionTop{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 7px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.positionMiddle{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 7px;
+    /* margin-top: -3.5px; */
+    transform: translateY(-50%);
+    width: 100%;
+    background-color: #fff;
+    border-radius: 30px;
+}
+.positionBottom{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 7px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 30px;
+    transform: translateY(-100%);
+}
+
+/* menu--isAct가 버튼의 부모요소에 추가 되었을 때 */
+
+.menu--isAct .positionTop{
+    top: 50%;
+    /* transform: translateY(-50%); */
+    transform: translateY(-50%) rotate(45deg) ;
+}
+.menu--isAct .positionMiddle{
+    /* transform: translateX(-100%) translateY(-50%); */
+    transform: translate(-110%, -50%);
+}
+.menu--isAct .positionBottom{
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+    /* 로테이트 먼저 주면 탑의 위치값이 달라지기 때문에 결과가 달라진다
+    속성의 순서중요!!!!! */
+}
+
+
+
+
+
+
+
+/* 메인 */
 .appMain{
     width: 100%;
 }
